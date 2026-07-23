@@ -28,6 +28,17 @@
     </style>
 </head>
 <body>
+   <audio id="bgMusic" loop>
+    <source src="SiglaSuperquark.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    music.play();
+}, { once: true });
+</script>
 
     <h1>Grazie! 🎓</h1>
     
